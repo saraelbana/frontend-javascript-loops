@@ -4,7 +4,7 @@
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
 
-const names = ["Henk", "Piet", "Fred", "Joop"];
+let names = ["Henk", "Piet", "Fred", "Joop"];
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -22,7 +22,7 @@ console.log(names);
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const numbers = [2, 4, 5, 29, 38];
+let numbers = [2, 4, 5, 29, 38];
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -47,7 +47,7 @@ console.log(numbers);
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const squares = [30, 2, 8, 24, 11];
+let squares = [30, 2, 8, 24, 11];
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -62,5 +62,8 @@ const squares = [30, 2, 8, 24, 11];
 //   'Het volume van 11 is 1331'
 // ]
 
-
+for(let i=0; i<squares.length;i++){
+    squares[i]= "Het volume van " + squares.at(i) + " is " + Math.pow(squares.at(i), 3);
+}
+console.log(squares);
 
