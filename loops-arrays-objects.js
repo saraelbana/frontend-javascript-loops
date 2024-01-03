@@ -102,9 +102,9 @@ console.log(NOVIEmployees);
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
 
-for( let i =0; i<NOVIEmployees.length ; i++){
+for( let i =0; i<NOVIEmployees.length ; i++) {
     NOVIEmployees[i].email = NOVIEmployees[i].email.toLowerCase();
-
+}
 
 // ==========================================
 // Opdracht 3
@@ -118,7 +118,7 @@ for( let i =0; i<NOVIEmployees.length ; i++){
 //  3581 = Oudwijk
 //  3583 = Schildersbuurt
 
-const students = [
+let students = [
     {name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: null},
     {name: 'Mehmet', city: 'Utrecht', zipCode: '3514', neighborhood: null},
     {name: 'Dennis', city: 'Utrecht', zipCode: '3572', neighborhood: null},
@@ -132,7 +132,6 @@ const students = [
     {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
-
 // Verwachte uitkomsten:
 // [
 //     { name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: 'Pijlsweerd' },
@@ -149,6 +148,6 @@ const students = [
 //     { name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: 'Vogelenbuurt' }
 // ]
 // ==========================================
+for (let i =0; i<students.length; i++){
 
-
-
+}
