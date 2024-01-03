@@ -11,8 +11,10 @@
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
 
-
-
+let printPattern = "*";
+for(let i = 0; i <5; i++){
+    console.log(printPattern.repeat(i+1));
+}
 
 
 // ==========================================
@@ -25,8 +27,10 @@
 // klaar!
 // ==========================================
 
-
-
+for(let i=0; i<4; i++){
+    console.log("loop...");
+}
+console.log("klaar!")
 
 
 // ==========================================
@@ -44,10 +48,31 @@
 // >> 8
 // >> 9
 // ==========================================
+for( let i= 0; i<10;i++){
+    switch (i){
+        case 0:
+        case 1:
+            case 2:
 
+            console.log(i);
+            break;
+        case 3:
+        case 4:
+            case 5:
 
+            console.log("> "+ i);
+            break;
 
-
+        case 6:
+        case 7:
+        case 8:
+            case 9:
+            console.log(">> "+ i);
+            break;
+        default:
+            break;
+    }
+}
 
 // ==========================================
 // Opdracht 4 (BONUS): schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
@@ -87,5 +112,15 @@
 // etc.
 // ==========================================
 
-
-
+for(let i =1; i<=100 ;i++){
+    if(i%3 === 0 && i%5 === 0)
+        console.log("FizzBuzz");
+    else if(i%3 === 0){
+        console.log("Fizz");
+    }
+    else if(i%5 === 0){
+        console.log("Buzz");
+    }
+    else
+        console.log(i);
+}

@@ -4,7 +4,7 @@
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
 
-const names = ["Henk", "Piet", "Fred", "Joop"];
+let names = ["Henk", "Piet", "Fred", "Joop"];
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -12,17 +12,17 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
-
-
-
-
+for(let i=0; i<names.length;i++){
+    names[i] = names.at(i)+"je";
+}
+console.log(names);
 // ==========================================
 // Opdracht 2
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const numbers = [2, 4, 5, 29, 38];
+let numbers = [2, 4, 5, 29, 38];
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -30,10 +30,15 @@ const numbers = [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 4, 8, 15, 87, 76 ];
 
-
-
-
-
+for(let i=0; i<numbers.length;i++){
+    if(numbers[i]%2 === 0) {
+        numbers[i] = numbers.at(i)*2;
+    }
+    else{
+        numbers[i] = numbers.at(i)*3;
+    }
+}
+console.log(numbers);
 // ==========================================
 // Opdracht 3
 // Schrijf een script dat voor de maat van ieder vierkant in onderstaande array, het volume uitrekent.
@@ -42,7 +47,7 @@ const numbers = [2, 4, 5, 29, 38];
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const squares = [30, 2, 8, 24, 11];
+let squares = [30, 2, 8, 24, 11];
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -57,5 +62,8 @@ const squares = [30, 2, 8, 24, 11];
 //   'Het volume van 11 is 1331'
 // ]
 
-
+for(let i=0; i<squares.length;i++){
+    squares[i]= "Het volume van " + squares.at(i) + " is " + Math.pow(squares.at(i), 3);
+}
+console.log(squares);
 
