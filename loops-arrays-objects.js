@@ -16,10 +16,9 @@ const scores = [
 // 66
 // ==========================================
 
-
-
-
-
+for( let i =0 ; i<scores.length; i++){
+    console.log(scores[i].score);
+}
 // ==========================================
 // Opdracht 1b
 // Breid je script uit door voor iedere student de score om te rekenen naar een letter en dit in de terminal te printen
