@@ -73,6 +73,7 @@ for( let i =0 ; i<scores.length; i++){
     }
     else scores[i].grade = "A";
 }
+console.log(scores)
 // ==========================================
 // Opdracht 2
 // Schrijf een script die e-mailadressen genereert voor al onze medewerkers. Sla dit op in een nieuwe property "email" die je toevoegt aan iedere medewerker.
@@ -105,7 +106,7 @@ console.log(NOVIEmployees);
 for( let i =0; i<NOVIEmployees.length ; i++) {
     NOVIEmployees[i].email = NOVIEmployees[i].email.toLowerCase();
 }
-
+console.log(NOVIEmployees);
 // ==========================================
 // Opdracht 3
 // Schrijf een script die de property "neighborhood" (de buurt) invult op basis van de postcode van onze studenten.
@@ -175,3 +176,4 @@ for (let i =0; i<students.length; i++){
             break;
     }
 }
+console.log(students);
