@@ -30,7 +30,7 @@ for(let i = 0; i <5; i++){
 for(let i=0; i<4; i++){
     console.log("loop...");
 }
-
+console.log("klaar!")
 
 
 // ==========================================
