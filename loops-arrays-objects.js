@@ -77,7 +77,7 @@ for( let i =0 ; i<scores.length; i++){
 // Opdracht 2
 // Schrijf een script die e-mailadressen genereert voor al onze medewerkers. Sla dit op in een nieuwe property "email" die je toevoegt aan iedere medewerker.
 
-const NOVIEmployees = [
+let NOVIEmployees = [
     {firstName: 'Nova', lastName: 'Eeken'},
     {firstName: 'Sam', lastName: 'Barnhoorn'},
     {firstName: 'Tessa', lastName: 'Steur'},
@@ -94,12 +94,10 @@ const NOVIEmployees = [
 //   { firstName: 'Mark', lastName: 'Rensen', email: 'Mark.Rensen@novi.nl' },
 //  ];
 // ==========================================
-
-
-
-
-
-
+for( let i =0; i<NOVIEmployees.length ; i++){
+    NOVIEmployees[i].email = NOVIEmployees[i].firstName + "." + NOVIEmployees[i].lastName +"@novi.nl";
+}
+console.log(NOVIEmployees);
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
