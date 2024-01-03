@@ -27,7 +27,9 @@ for(let i = 0; i <5; i++){
 // klaar!
 // ==========================================
 
-
+for(let i=0; i<4; i++){
+    console.log("loop...");
+}
 
 
 
@@ -46,7 +48,22 @@ for(let i = 0; i <5; i++){
 // >> 8
 // >> 9
 // ==========================================
+for( let i= 0; i<10;i++){
+    switch (i){
+        case 0,1,2:
+            console.log(i);
+            break;
+        case 3,4,5:
+            console.log("> "+ i);
+            break;
 
+        case 6,7,8,9:
+            console.log(">> "+ i);
+            break;
+        default:
+            break;
+    }
+}
 
 
 
