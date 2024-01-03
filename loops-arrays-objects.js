@@ -2,7 +2,7 @@
 // Opdracht 1a
 // Schrijf een script dat voor iedere student in de array de score (het getal uit de property "score") in de terminal print
 
-const scores = [
+let scores = [
     {name: 'Max', score: 83, grade: null},
     {name: 'David', score: 77, grade: null},
     {name: 'Khalid', score: 92, grade: null},
@@ -58,10 +58,21 @@ for( let i =0 ; i<scores.length; i++){
 //  ];
 // ==========================================
 
-
-
-
-
+for( let i =0 ; i<scores.length; i++){
+    if(scores[i].score <= 60){
+        scores[i].grade = "F";
+    }
+    else if(scores[i].score <= 70){
+        scores[i].grade = "D";
+    }
+    else if(scores[i].score <= 80){
+        scores[i].grade = "C";
+    }
+    else if(scores[i].score <= 90){
+        scores[i].grade = "B";
+    }
+    else scores[i].grade = "A";
+}
 // ==========================================
 // Opdracht 2
 // Schrijf een script die e-mailadressen genereert voor al onze medewerkers. Sla dit op in een nieuwe property "email" die je toevoegt aan iedere medewerker.
